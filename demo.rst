@@ -524,8 +524,6 @@ Table Directives
 
 **ADDED** This wasn't included in the original Demo.
 
-Unfortunately unsupported.
-
 .. list-table:: List Table: Frozen Delights!
    :widths: 15 10 30
    :header-rows: 1
@@ -556,14 +554,24 @@ Unfortunately unsupported.
 Inclusion
 `````````
 
-Potential security risk!
+
+**ADDED** This wasn't included in the original Demo.
+
+Include an rST fragment from an external file.
+Requires a special setting of the interpreter.
+
+**Potential security risk!**
 
 .. include:: included.rst
 
 Raw
 ````
 
-Potential security risk!
+**ADDED** This wasn't included in the original Demo.
+
+Insert output-format specific raw content, such as HTML rendered only in the HTML output.
+
+**Potential security risk!**
 
 .. raw:: html
 
