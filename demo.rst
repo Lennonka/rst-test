@@ -54,8 +54,10 @@
        markup language, containing examples of all basic
        constructs and many advanced constructs.
 
-.. contents:: **Table of Contents**
-.. section-numbering::
+.. contents:: Table of Contents
+
+..
+   section-numbering\:\:
 
 
 Structural Elements
