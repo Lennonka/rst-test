@@ -42,7 +42,7 @@
 
     For Docutils users & co-developers.
 
-:abstract:
+:Abstract:
 
     This document is a demonstration of the reStructuredText markup
     language, containing examples of all basic reStructuredText
@@ -54,7 +54,7 @@
        markup language, containing examples of all basic
        constructs and many advanced constructs.
 
-.. contents:: Table of Contents
+.. contents:: **Table of Contents**
 .. section-numbering::
 
 
@@ -304,7 +304,7 @@ Here's a grid table followed by a simple table:
 +------------------------+------------+---------------------+
 | body row 3             | Cells may  | - Table cells       |
 +------------------------+ span rows. | - contain           |
-| body row 4             |            | - body elements.    |
+| body row 4             |     Table of Contents       | - body elements.    |
 +------------------------+------------+----------+----------+
 | body row 5             | Cells may also be     |          |
 |                        | empty: ``-->``        |          |
@@ -320,6 +320,8 @@ True   False  True
 False  True   True
 True   True   True
 =====  =====  ======
+
+See also `Table Directives`_.
 
 Footnotes
 ---------
@@ -474,7 +476,7 @@ Topics, Sidebars, and Rubrics
    :subtitle: Optional Subtitle
 
    This is a sidebar.  It is for text outside the flow of the main
-   text.  
+   text.
 
    .. rubric:: This is a rubric inside a sidebar
 
@@ -509,13 +511,63 @@ Compound Paragraph
        Connecting... OK
        Transmitting data... OK
        Disconnecting... OK
-      
+
    and thus consists of a simple paragraph, a literal block, and
    another simple paragraph.  Nonetheless it is semantically *one*
    paragraph.
 
 This construct is called a *compound paragraph* and can be produced
 with the "compound" directive.
+
+Table Directives
+````````````````
+
+**ADDED** This wasn't included in the original Demo.
+
+Unfortunately unsupported.
+
+.. list-table:: List Table: Frozen Delights!
+   :widths: 15 10 30
+   :header-rows: 1
+
+   * - Treat
+     - Quantity
+     - Description
+   * - Albatross
+     - 2.99
+     - On a stick!
+   * - Crunchy Frog
+     - 1.49
+     - If we took the bones out, it wouldn't be
+       crunchy, now would it?
+   * - Gannet Ripple
+     - 1.99
+     - On a stick!
+
+.. csv-table:: CSV Table: Frozen Delights!
+   :header: "Treat", "Quantity", "Description"
+   :widths: 15, 10, 30
+
+   "Albatross", 2.99, "On a stick!"
+   "Crunchy Frog", 1.49, "If we took the bones out, it wouldn't be
+   crunchy, now would it?"
+   "Gannet Ripple", 1.99, "On a stick!"
+
+Inclusion
+`````````
+
+Potential security risk!
+
+.. include:: included.rst
+
+Raw
+````
+
+Potential security risk!
+
+.. raw:: html
+
+   <abbr title="Free Open-Source Software">FOSS</abbr>
 
 Substitution Definitions
 ------------------------
